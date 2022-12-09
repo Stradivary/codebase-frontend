@@ -1,0 +1,34 @@
+.root {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.root > div {
+  height: 2rem;
+  position: relative;
+  width: 2rem;
+}
+
+.spinner {
+  animation: spin 1s ease-in-out infinite;
+  border: 0.1rem solid var(--primary-color);
+  border-radius: 50%;
+  border-top-color: transparent;
+  display: inline-block;
+  height: 120%;
+  left: -10%;
+  position: absolute;
+  top: -10%;
+  width: 120%;
+}
+
+.spinner + img {
+  width: 100%;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,28 @@
+.root {
+  padding: 2rem;
+}
+
+.root > div {
+  left: 50%;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.root > div > button {
+  background-color: transparent;
+  border: 0.0625rem solid #ffffff;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 0.25rem;
+  padding: 0.125rem 2rem;
+}
+
+@media only screen and (max-width: 48em) {
+  .root {
+    padding: 1rem;
+  }
+}
